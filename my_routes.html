@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>burns off road</title>
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+<div class="eclipse-body"></div>
+<div id="mobile-nav-wrapper" data-toggler=".is-active"></div>
+<div id="body-wrapper" >
+  <div id="header">
+    <div id="header-wrapper">
+      <div class="row header">
+        <button id="trigger" type="button" class="c-hamburger c-hamburger--htx"  data-toggler=".is-active" data-toggle="mobile-nav-wrapper trigger"> <span></span> </button>
+        <a class="logo" href="#" title="Burns Off Road"></a>
+        <form id="search-bar" class="search-bar">
+          <input type="search" placeholder="Поиск">
+        </form>
+        <a class="top-profile float-right" href="#" data-toggle="top-profile-dropdown"> <span class="top-profile-name">Виталий</span> <img class="top-profile-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <span class="arrow-down"></span> </a>
+        <div class="dropdown-pane bottom" id="top-profile-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;"> top-profile-dropdown </div>
+        <div id="notification-bar" class="button-group float-right">
+          <div class="button float-right icon notification is-notify" data-toggle="notification-dropdown"> <span class="notify-bubble">12</span> </div>
+          <div class="button float-right icon messages" data-toggle="messages-dropdown"></div>
+          <div class="button float-right icon friends" data-toggle="friends-dropdown"></div>
+        </div>
+        <div class="dropdown-pane bottom " id="friends-dropdown" data-dropdown data-options="hOffset: 69; closeOnClick: true; "> friends </div>
+        <div class="dropdown-pane bottom" id="messages-dropdown" data-dropdown data-options="hOffset: 35; closeOnClick: true;"> messages </div>
+        <div class="dropdown-pane bottom" id="notification-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;"> notification </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mid-body">
+    <div id="sidebar" class="float-left" data-sticky-container>
+      <ul id="sidebar-nav" class="menu vertical sticky" data-sticky data-margin-top="4.438" data-anchor="page-body">
+        <li class="feed current"><a href="#"><span class="icon-26"></span>Моя лента</a></li>
+        <li class="route"><a href="#"><span class="icon-26"></span>Мои маршруты</a></li>
+        <li class="race"><a href="#"><span class="icon-26"></span>Заезды</a></li>
+        <li class="club"><a href="#"><span class="icon-26"></span>Клубы</a></li>
+        <li class="service"><a href="#"><span class="icon-26"></span>Сервисы</a></li>
+        <li class="shop"><a href="#"><span class="icon-26"></span>Магазин</a></li>
+      </ul>
+    </div>
+    <div id="page-body" class="float-right">
+      <div class="my-routes-top-bar clearfix">
+        <ul id="my-routes-nav" class="menu float-left fs12">
+          <li class="route is-active"><a href="#"><span class="icon-26"></span>Мои маршруты</a></li>
+          <li class="race"><a href="#"><span class="icon-26"></span>Карта</a></li>
+        </ul>
+        <a class="button secondary small float-right fs12">
+        <div class="icon-32 ic-add float-left"></div>
+        Создать маршрут </a> </div>
+      <div class="my-routes-block clearfix">
+        <div class="my-routes-header">
+          <div class="fs14 float-left">Мои маршруты</div>
+          <form id="my-routes-search-bar" class="search-bar">
+            <input type="search" placeholder="Поиск маршрутов">
+          </form>
+          <ul class="pagination" role="navigation" aria-label="Pagination">
+          	<!--  Предыдущая страница, закомментировал пока  -->
+            <!--li class="pagination-previous ">
+                  	<a href="#" aria-label="Previous page"></a>
+                  </li-->
+            <li class="current">1</li>
+            <li><a href="#" aria-label="Page 2">2</a></li>
+            <li><a href="#" aria-label="Page 3">3</a></li>
+            <li class="pagination-next"> <a href="#" aria-label="Next page"></a> </li>
+          </ul>
+        </div>
+        <div class="my-routes-content">
+          <table class="table fs12" width="100%" border="0">
+            <thead>
+              <tr>
+                <th scope="col" width="100">Карта</th>
+                <th scope="col" width="27%">Название</th>
+                <th scope="col" >Время</th>
+                <th scope="col" >Сложность</th>
+                <th scope="col" >Дистанция</th>
+                <th scope="col" >Высота</th>
+                <th scope="col" width="138">Тип транспорта</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="images/map-80.jpg" width="80" height="80"  alt="map" /></td>
+                <td><div>Дневной заезд по горам Сахалина</div>
+                  <div class="color-secondary fs10">Черновик</div>
+                  <div class="small-4 float-left"> <a href="#" class="color-primary">Изменить</a> </div>
+                  <div class="small-4 float-left"> <a href="#"  class="color-primary">Удалить</a> </div></td>
+                <td>256<span class="fs10"> ч</span></td>
+                <td><div class="lvl-difficult">Сложный</div></td>
+                <td>245<span class="fs10"> км </span></td>
+                <td><div><span class="fs10">мин </span>200<span class="fs10"> м</span></div>
+                  <div><span class="fs10">макс </span>2200<span class="fs10"> м</span></div></td>
+                <td><div class="icon-32 trans-buggy-hover float-left"></div>
+                  <div class="icon-32 trans-4x4-hover float-left"></div></td>
+              </tr>
+              <tr>
+                <td><img src="images/map-80.jpg" width="80" height="80"  alt="map" /></td>
+                <td><div>Дневной заезд по горам Сахалина</div>
+                  <div class="color-gray fs10">Создано: 8 ноября 2016 г</div>
+                  <div class="small-4 float-left"> <a href="#" class="color-primary">Изменить</a> </div>
+                  <div class="small-4 float-left"> <a href="#"  class="color-primary">Удалить</a> </div></td>
+                <td>256<span class="fs10"> ч</span></td>
+                <td><div class="lvl-difficult">Сложный</div></td>
+                <td>245<span class="fs10"> км </span></td>
+                <td><div><span class="fs10">мин </span>200<span class="fs10"> м</span></div>
+                  <div><span class="fs10">макс </span>2200<span class="fs10"> м</span></div></td>
+                <td><div class="icon-32 trans-buggy-hover float-left"></div>
+                  <div class="icon-32 trans-4x4-hover float-left"></div></td>
+              </tr>
+              <tr>
+                <td><img src="images/map-80.jpg" width="80" height="80"  alt="map" /></td>
+                <td><div>Дневной заезд по горам Сахалина</div>
+                  <div class="color-gray fs10">Создано: 8 ноября 2016 г</div>
+                  <div class="small-4 float-left"> <a href="#" class="color-primary">Изменить</a> </div>
+                  <div class="small-4 float-left"> <a href="#"  class="color-primary">Удалить</a> </div></td>
+                <td>256<span class="fs10"> ч</span></td>
+                <td><div class="lvl-difficult">Сложный</div></td>
+                <td>245<span class="fs10"> км </span></td>
+                <td><div><span class="fs10">мин </span>200<span class="fs10"> м</span></div>
+                  <div><span class="fs10">макс </span>2200<span class="fs10"> м</span></div></td>
+                <td><div class="icon-32 trans-buggy-hover float-left"></div>
+                  <div class="icon-32 trans-4x4-hover float-left"></div></td>
+              </tr>
+              <tr>
+                <td><img src="images/map-80.jpg" width="80" height="80"  alt="map" /></td>
+                <td><div>Дневной заезд по горам Сахалина</div>
+                  <div class="color-gray fs10">Создано: 8 ноября 2016 г</div>
+                  <div class="small-4 float-left"> <a href="#" class="color-primary">Изменить</a> </div>
+                  <div class="small-4 float-left"> <a href="#"  class="color-primary">Удалить</a> </div></td>
+                <td>256<span class="fs10"> ч</span></td>
+                <td><div class="lvl-difficult">Сложный</div></td>
+                <td>245<span class="fs10"> км </span></td>
+                <td><div><span class="fs10">мин </span>200<span class="fs10"> м</span></div>
+                  <div><span class="fs10">макс </span>2200<span class="fs10"> м</span></div></td>
+                <td><div class="icon-32 trans-buggy-hover float-left"></div>
+                  <div class="icon-32 trans-4x4-hover float-left"></div></td>
+              </tr>
+              <tr>
+                <td><img src="images/map-80.jpg" width="80" height="80"  alt="map" /></td>
+                <td><div>Дневной заезд по горам Сахалина</div>
+                  <div class="color-gray fs10">Создано: 8 ноября 2016 г</div>
+                  <div class="small-4 float-left"> <a href="#" class="color-primary">Изменить</a> </div>
+                  <div class="small-4 float-left"> <a href="#"  class="color-primary">Удалить</a> </div></td>
+                <td>256<span class="fs10"> ч</span></td>
+                <td><div class="lvl-difficult">Сложный</div></td>
+                <td>245<span class="fs10"> км </span></td>
+                <td><div><span class="fs10">мин </span>200<span class="fs10"> м</span></div>
+                  <div><span class="fs10">макс </span>2200<span class="fs10"> м</span></div></td>
+                <td><div class="icon-32 trans-buggy-hover float-left"></div>
+                  <div class="icon-32 trans-4x4-hover float-left"></div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="right-sidebar">
+  <div id="events-body">
+    <ul id="event-list">
+      <li> <a href="#">
+        <div class="thumb"> <img src="images/map-160.jpg" alt="map" width="50" height="50"> </div>
+        <div class="event-info">
+          <div class="event-title">Burns Off Road</div>
+          <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="thumb"> <img src="images/map-160.jpg" alt="map" width="50" height="50"> </div>
+        <div class="event-info">
+          <div class="event-title">Квадроциклисты</div>
+          <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="thumb"> <img src="images/map-160.jpg" alt="map" width="50" height="50"> </div>
+        <div class="event-info">
+          <div class="event-title">Поездки по подм..</div>
+          <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="thumb"> <img src="images/map-160.jpg" alt="map" width="50" height="50"> </div>
+        <div class="event-info">
+          <div class="event-title">Поездки по подм..</div>
+          <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
+        </div>
+        </a> </li>
+    </ul>
+  </div>
+  <div id="chat-body">
+    <ul id="chat-list">
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb offline"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+    </ul>
+  </div>
+  <form id="chat-list-search">
+    <input placeholder="Поиск друзей" type="search">
+  </form>
+</div>
+<script src="js/jquery.js"></script> 
+<script src="js/what-input.js"></script> 
+<script src="js/foundation.js"></script> 
+<script src="js/app.js"></script>
+</body>
+</html>
