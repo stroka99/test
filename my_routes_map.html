@@ -1,0 +1,190 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>burns off road</title>
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400,500,700&amp;subset=cyrillic-ext" rel="stylesheet">
+</head>
+<body>
+<div class="eclipse-body"></div>
+<div id="mobile-nav-wrapper" data-toggler=".is-active"></div>
+<div id="body-wrapper" >
+  <div id="header">
+    <div id="header-wrapper">
+      <div class="row header">
+        <button id="trigger" type="button" class="c-hamburger c-hamburger--htx"  data-toggler=".is-active" data-toggle="mobile-nav-wrapper trigger"> <span></span> </button>
+        <a class="logo" href="#" title="Burns Off Road"></a>
+        <form id="search-bar" class="search-bar">
+          <input type="search" placeholder="Поиск">
+        </form>
+        <a class="top-profile float-right" href="#" data-toggle="top-profile-dropdown"> <span class="top-profile-name">Виталий</span> <img class="top-profile-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <span class="arrow-down"></span> </a>
+        <div class="dropdown-pane bottom" id="top-profile-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;"> top-profile-dropdown </div>
+        <div id="notification-bar" class="button-group float-right">
+          <div class="button float-right icon notification is-notify" data-toggle="notification-dropdown"> <span class="notify-bubble">12</span> </div>
+          <div class="button float-right icon messages" data-toggle="messages-dropdown"></div>
+          <div class="button float-right icon friends" data-toggle="friends-dropdown"></div>
+        </div>
+        <div class="dropdown-pane bottom " id="friends-dropdown" data-dropdown data-options="hOffset: 69; closeOnClick: true; "> friends </div>
+        <div class="dropdown-pane bottom" id="messages-dropdown" data-dropdown data-options="hOffset: 35; closeOnClick: true;"> messages </div>
+        <div class="dropdown-pane bottom" id="notification-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;"> notification </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mid-body">
+    <div id="page-body" class="float-right">
+      <div id="map-constructor"></div>
+      <!-- Tooltip-->
+      <div class="map-tooltip">
+        <div class="map-tooltip-header clearfix">
+          <button class="close-button" type="button"> <span aria-hidden="true">&times;</span> </button>
+          <div class="map-tooltip-profile-img"> <img class="thumb-80 float-left" src="https://pp.vk.me/c623726/v623726939/680b/tnnhnFxi-TE.jpg" alt="Виталий"> </div>
+          <div class="map-tooltip-info fs12 color-gray float-left">
+            <div class="map-tooltip-title fs14 color-dark">Длинное название маршрута который создал пользователь</div>
+            <div>Тип местности: <span class="color-dark"> Лес</span></div>
+            <div>Тип путенествия:<span class="color-dark"> Семейная/Прогулочная</span> </div>
+            <div class="fs10">Создано: 8 ноября 2016 г</div>
+          </div>
+        </div>
+        <div class="map-tooltip-content">
+          <div class="float-left  fs14">
+            <div class="small-12 column np">
+              <div class=" small-4 columns np">
+                <div class="float-left">
+                  <div class="color-black">
+                    <div class="lvl-difficult">Сложный</div>
+                  </div>
+                  <div class="color-gray fs10">Сложность</div>
+                </div>
+              </div>
+              <div class=" small-4 columns np">
+                <div class="float-left">
+                  <div class="color-black">245<span class="fs10"> км </span></div>
+                  <div class="color-gray fs10">Дистанция</div>
+                </div>
+              </div>
+              <div class=" small-4 columns np">
+                <div class="float-left">
+                  <div class="color-black">7 <span class="fs10">дней</span>, 6 <span class="fs10">ночей</span></div>
+                  <div class="color-gray fs10">Длительность</div>
+                </div>
+              </div>
+            </div>
+            <div class="small-12 column np">
+              <div class=" small-4 columns np">
+                <div class="float-left">
+                  <div class="color-black"> 88 <span class="fs10">км/ч</span> </div>
+                  <div class="color-gray fs10">Ср. скорость</div>
+                </div>
+              </div>
+              <div class=" small-4 columns np">
+                <div class="float-left">
+                  <div class="color-black"><span class="fs10">min.</span> 40 <span class="fs10">м</span></div>
+                  <div class="color-gray fs10">Над уровнем моря</div>
+                </div>
+              </div>
+              <div class=" small-4 columns np">
+                <div class="float-left">
+                  <div class="color-black"><span class="fs10">max.</span> 2800 <span class="fs10">м</span></div>
+                  <div class="color-gray fs10">Над уровнем моря</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map-tooltip-footer">
+          <div class="float-left">
+            <div class="icon-32 trans-buggy-hover float-left"></div>
+            <div class="icon-32 trans-atv-hover float-left"></div>
+            <div class="icon-32 trans-motocross-hover float-left"></div>
+            <div class="icon-32 trans-4x4-hover float-left"></div>
+            <div class="icon-32 trans-snowmobile-hover float-left"></div>
+            <div class="color-gray fs10">Вид транспорта</div>
+          </div>
+          <button type="button" class="secondary button float-right tiny">Подробнее</button>
+        </div>
+      </div>
+      <!--/ Tooltip-->
+      <div class="my-routes-top-bar clearfix">
+          <ul id="my-routes-nav" class="menu float-left fs12">
+            <li class="route"><a href="#"><span class="icon-26"></span>Мои маршруты</a></li>
+            <li class="race is-active"><a href="#"><span class="icon-26"></span>Карта</a></li>
+          </ul>
+          <a class="button secondary small float-right fs12"><div class="icon-32 ic-add float-left"></div>Создать маршрут </a>
+      </div>
+      <div class="my-routes-map-block clearfix">
+        <div class="filters">
+          <div class="accordion" data-accordion  data-allow-all-closed="true" data-slide-speed="0">
+            <div class="accordion-item" data-accordion-item> <a href="#" class="accordion-title fs12" aria-expanded="false" aria-selected="false">
+              <div class="icon-32 ic-filters"></div>
+              Параметры фильтра</a>
+              <div class="accordion-content" data-tab-content aria-hidden="true" style="display:none">
+                <div>
+                  <div class="fs10 color-gray">ТИП:</div>
+                  <div class="button-group tiny">
+                    <button type="button" class="button secondary">Все</button>
+                    <button type="button" class="button">Заезды</button>
+                    <button type="button" class="button">Маршруты</button>
+                  </div>
+                </div>
+                <div>
+                  <div class="fs10 color-gray">СЛОЖНОСТЬ:</div>
+                  <div class="button-group tiny">
+                    <button type="button" class="button">Легко</button>
+                    <button type="button" class="button secondary">Среднее</button>
+                    <button type="button" class="button">Сложный</button>
+                  </div>
+                </div>
+                <div>
+                  <div class="fs10 color-gray">ТИП ТРАНСОПРТА:</div>
+                  <div class="transports button-group tiny">
+                    <button type="button" class="button is-active"> <!-- is-active выбранный елемент-->
+                    <div class="icon-32 trans-atv float-left"></div>
+                    </button>
+                    <button type="button" class="button is-active"> <!-- is-active выбранный елемент-->
+                    <div class="icon-32 trans-buggy float-left"></div>
+                    </button>
+                    <button type="button" class="button">
+                    <div class="icon-32 trans-motocross float-left"></div>
+                    </button>
+                    <button type="button" class="button">
+                    <div class="icon-32 trans-4x4 float-left"></div>
+                    </button>
+                    <button type="button" class="button">
+                    <div class="icon-32 trans-snowmobile float-left"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form id="my-routes-map-search-bar" class="search-bar">
+          <input type="search" placeholder="Поиск маршрутов">
+        </form>
+      </div>
+      <div class="map-constructor-right-bar">
+        <button type="button" class="circle-button layers-btn">
+        <div class="icon-32 ic-layers"></div>
+        </button>
+        <div class=" button-group zoom-btn">
+          <button type="button" class="circle-button">
+          <div class="icon-32 ic-zoom-in"></div>
+          </button>
+          <button type="button" class="circle-button layers-btn">
+          <div class="icon-32 ic-zoom-out"></div>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/jquery.js"></script> 
+<script src="js/what-input.js"></script> 
+<script src="js/foundation.js"></script> 
+<script src="js/app.js"></script>
+</body>
+</html>

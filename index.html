@@ -11,630 +11,634 @@
 </head>
 <body>
 <div class="eclipse-body"></div>
-<div id="body-wrapper">
-<div id="header">
-<div id="header-wrapper">
-  <div class="row header"> <a class="logo" href="#" title="Burns Off Road"></a>
-    <form id="search-bar">
-      <input type="search" placeholder="Поиск друзей, поездок, маршрутов">
-    </form>
-    <a class="top-profile float-right" href="#" data-toggle="top-profile-dropdown"> <span class="top-profile-name">Виталий</span> <img class="top-profile-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <span class="arrow-down"></span> </a>
-    <div class="dropdown-pane bottom" id="top-profile-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;"> top-profile-dropdown </div>
-    <div id="notification-bar" class="button-group float-right">
-      <div class="button float-right icon notification is-notify" data-toggle="notification-dropdown"> <span class="notify-bubble">12</span> </div>
-      <div class="button float-right icon messages" data-toggle="messages-dropdown"></div>
-      <div class="button float-right icon friends" data-toggle="friends-dropdown"></div>
+<div id="mobile-nav-wrapper" data-toggler=".is-active"></div>
+<div id="body-wrapper" >
+  <div id="header">
+    <div id="header-wrapper">
+      <div class="row header">
+        <button id="trigger" type="button" class="c-hamburger c-hamburger--htx"  data-toggler=".is-active" data-toggle="mobile-nav-wrapper trigger"> <span></span> </button>
+        <a class="logo" href="#" title="Burns Off Road"></a>
+        <form id="search-bar" class="search-bar">
+          <input type="search" placeholder="Поиск">
+        </form>
+        <a class="top-profile float-right" href="#" data-toggle="top-profile-dropdown"> <span class="top-profile-name">Виталий</span> <img class="top-profile-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <span class="arrow-down"></span> </a>
+        <div class="dropdown-pane bottom" id="top-profile-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;"> top-profile-dropdown </div>
+        <div id="notification-bar" class="button-group float-right">
+          <div class="button float-right icon notification is-notify" data-toggle="notification-dropdown"> <span class="notify-bubble">12</span> </div>
+          <div class="button float-right icon messages" data-toggle="messages-dropdown"></div>
+          <div class="button float-right icon friends" data-toggle="friends-dropdown"></div>
+        </div>
+        <div class="dropdown-pane bottom " id="friends-dropdown" data-dropdown data-options="hOffset: 69; closeOnClick: true; "> friends </div>
+        <div class="dropdown-pane bottom" id="messages-dropdown" data-dropdown data-options="hOffset: 35; closeOnClick: true;"> messages </div>
+        <div class="dropdown-pane bottom" id="notification-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;"> notification </div>
+      </div>
     </div>
-    <div class="dropdown-pane bottom " id="friends-dropdown" data-dropdown data-options="hOffset: 69; closeOnClick: true; "> friends </div>
-    <div class="dropdown-pane bottom" id="messages-dropdown" data-dropdown data-options="hOffset: 35; closeOnClick: true;"> messages </div>
-    <div class="dropdown-pane bottom" id="notification-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;"> notification </div>
   </div>
-</div>
-</div>
-<div class="row mid-body">
-  <div id="sidebar" class="float-left" data-sticky-container>
-    <ul id="sidebar-nav" class="menu vertical sticky" data-sticky data-margin-top="4.438" data-anchor="page-body">
-      <li class="feed current"><a href="#"><span class="icon-26"></span>Моя лента</a></li>
-      <li class="route"><a href="#"><span class="icon-26"></span>Мои маршруты</a></li>
-      <li class="race"><a href="#"><span class="icon-26"></span>Заезды</a></li>
-      <li class="club"><a href="#"><span class="icon-26"></span>Клубы</a></li>
-      <li class="service"><a href="#"><span class="icon-26"></span>Сервисы</a></li>
-      <li class="shop"><a href="#"><span class="icon-26"></span>Магазин</a></li>
-    </ul>
-  </div>
-  <div id="page-body" class="float-right">
-    <div id="left-col" class="float-left">
-      <div id="submit-post-box">
-        <div class="submit-post-box-left float-left"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
-          <div class="float-right">
-            <div class="button icon edit-post"></div>
+  <div class="row mid-body">
+    <div id="sidebar" class="float-left" data-sticky-container>
+      <ul id="sidebar-nav" class="menu vertical sticky" data-sticky data-margin-top="4.438" data-anchor="page-body">
+        <li class="feed current"><a href="#"><span class="icon-26"></span>Моя лента</a></li>
+        <li class="route"><a href="#"><span class="icon-26"></span>Мои маршруты</a></li>
+        <li class="race"><a href="#"><span class="icon-26"></span>Заезды</a></li>
+        <li class="club"><a href="#"><span class="icon-26"></span>Клубы</a></li>
+        <li class="service"><a href="#"><span class="icon-26"></span>Сервисы</a></li>
+        <li class="shop"><a href="#"><span class="icon-26"></span>Магазин</a></li>
+      </ul>
+    </div>
+    <div id="page-body" class="float-right">
+      <div id="left-col" class="float-left">
+        <div id="submit-post-box">
+          <div class="submit-post-box-left float-left"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
+            <div class="float-right">
+              <div class="button icon edit-post"></div>
+            </div>
+          </div>
+          <div class="submit-post-box-right float-right">
+            <form id="submit-post-box-form">
+              <input class="eclipsed" type="search" placeholder="Что вы думаете?">
+            </form>
+            <div class="submit-post-box-right-footer">
+              <div class="button-group float-left">
+                <div class="button icon add-photos"></div>
+                <div class="button icon add-race"></div>
+                <div class="button icon add-map"></div>
+              </div>
+              <button class="tiny button float-right">Отправить</button>
+            </div>
           </div>
         </div>
-        <div class="submit-post-box-right float-right">
-          <form id="submit-post-box-form">
-            <input class="eclipsed" type="search" placeholder="Что вы думаете?">
-          </form>
-          <div class="submit-post-box-right-footer">
-            <div class="button-group float-left">
-              <div class="button icon add-photos"></div>
-              <div class="button icon add-race"></div>
-              <div class="button icon add-map"></div>
+        <div id="timeline" class="float-left">
+          <div class="feed-row">
+            <div class="post-author">
+              <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+              <div class="icon-32 trans-buggy"></div>
             </div>
-            <button class="tiny button float-right">Отправить</button>
+            <div class="post-wrapper">
+              <div class="post-timestamp">Сегодня в 22:37</div>
+              <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> пригласил Вас на</span></div>
+              <div class="post-content post-type-tour">
+                <div class="post-header">
+                  <div class="date-block">
+                    <div class="date-left">10</div>
+                    <div class="date-right">ОКТ<br>
+                      2016</div>
+                  </div>
+                  <div class="post-title">
+                    <h5><a href="#">Путешествие по подмосковью и МО</a></h5>
+                    <div class="post-type">Покатушку</div>
+                  </div>
+                  <div class="event-shedule clearfix">
+                    <div class="event-shedule-dates float-left">
+                      <div class="event-shedule-start-date">10 октября 2016</div>
+                      <div class="event-shedule-end-date">17 октября 2016</div>
+                    </div>
+                    <div class="event-shedule-times float-left">
+                      <div class="event-shedule-start-time"><span>НАЧАЛО ЗАЕДА</span><br>
+                        18:30 МСК</div>
+                    </div>
+                    <div class="event-shedule-times float-left">
+                      <div class="event-shedule-start-time"><span>УЧАСТНИКИ</span><br>
+                        788</div>
+                    </div>
+                    <div class="button-group dotts small float-right"> <a class="button">Я еду</a> <a class="dropdown button float-right " data-toggle="dotts-dropdown">
+                      <div class="ic-dotts icon-32"></div>
+                      </a>
+                      <div class="dropdown-pane bottom" id="dotts-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;" style="width:200px;">
+                        <ul class="menu vertical fs12">
+                          <li class="menu-text">Ваше действие</li>
+                          <li><a href="#">Я еду</a></li>
+                          <li><a href="#">Возможно</a></li>
+                          <li><a href="#">Не поеду</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <div class="race-details ">
+                    <div class="left-col float-left ">
+                      <div class="float-left ">
+                        <div class=" small-6 columns np">
+                          <div class="icon-32 ic-clock float-left"></div>
+                          <div class="float-left fs10">
+                            <div class="color-gray tup">Длительность</div>
+                            <div class="color-black"><span class="fs14">7</span> дней, <span class="fs14">6</span> ночей</div>
+                          </div>
+                        </div>
+                        <div class=" small-6 columns np">
+                          <div class="icon-32 ic-level float-left "></div>
+                          <div class="float-left fs10 ">
+                            <div class="color-gray tup">Уровень сложности</div>
+                            <div class="color-black fs12 lvl-difficult">Сложный</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="float-left">
+                        <div class=" small-6 columns np">
+                          <div class="icon-32 ic-distance float-left"></div>
+                          <div class="float-left fs10">
+                            <div class="color-gray tup">Дистанция</div>
+                            <div class="color-black"><span class="fs14">256 км</span> </div>
+                          </div>
+                        </div>
+                        <div class=" small-6 columns np">
+                          <div class="icon-32 ic-empty float-left "></div>
+                          <div class="float-left fs10 ">
+                            <div class="color-gray tup">Тип транспорта</div>
+                            <div class="icon-32 trans-buggy-hover float-left"></div>
+                            <div class="icon-32 trans-4x4-hover float-left"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="float-left ">
+                        <div class="icon-32 ic-gps float-left"></div>
+                        <div class="float-left">
+                          <div class="color-black fs12">56.861399, 53.213832</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="right-col float-right"> <img src="images/map-160.jpg" alt="map" width="160" height="146"> </div>
+                  </div>
+                  <div class="post-like-buttons">
+                    <ul class="menu">
+                      <li><a href="#">
+                        <div class="icon-32 ic-like float-left"></div>
+                        Нравится</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-comment float-left"></div>
+                        Комментарии</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-share float-left"></div>
+                        Поделиться</a></li>
+                      <li><a href="#">1 поделился</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-likes-block clearfix">
+                    <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+                    <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
+                    <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
+                  </div>
+                  <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
+                    <form class="form-post-comments">
+                      <input placeholder="Написать комментарий…" type="text">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feed-row">
+            <div class="post-author">
+              <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+              <div class="icon-32 trans-motocross"></div>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-timestamp">Сегодня в 22:37</div>
+              <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> поделился</span></div>
+              <div class="post-content post-type-adv">
+                <div class="post-header"> <img src="images/add-img.jpg" alt="adds" width="550" height="230">
+                  <div class="badge-adv badge">Реклама</div>
+                  <div class="text-adv">
+                    <h2 style="font-weight: bold; font-style: italic; color:#fff;">CAN-AM TROPHY - ТРОФИ РЕЙД 2016</h2>
+                    <p style="color: #fff;">Can-Am Trophy Russia теперь можно классифицировать<br>
+                      как марафон. Протяженность спецучастков будет<br>
+                      увеличена, вырастет и количество спортивных дней.</p>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <div class="post-like-buttons">
+                    <ul class="menu">
+                      <li><a href="#">
+                        <div class="icon-32 ic-like float-left"></div>
+                        Нравится</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-comment float-left"></div>
+                        Комментарии</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-share float-left"></div>
+                        Поделиться</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-likes-block clearfix">
+                    <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+                    <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
+                    <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
+                  </div>
+                  <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
+                    <form class="form-post-comments">
+                      <input placeholder="Написать комментарий…" type="text">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feed-row">
+            <div class="post-author">
+              <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+              <div class="icon-32 trans-atv"></div>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-timestamp">Сегодня в 22:37</div>
+              <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> поделился</span></div>
+              <div class="post-content post-type-video">
+                <div class="post-header">
+                  <div class="post-title">
+                    <h5><a href="#">Кавказские горы</a></h5>
+                    <div class="post-type">ВИДЕО</div>
+                  </div>
+                  <div class="post-text">Мужики я думаю вы это зацените</div>
+                  <a class="post-type-video-thumb" href="#" > <img src="images/video-thumb.jpg"  alt="video thumb" /> </a>
+                  <div class="post-type-video-views-count">10,333,885 Просмотров</div>
+                </div>
+                <div class="post-details">
+                  <div class="post-info-group-block">
+                    <div class="small-7 columns"> <a class="color-primary fs12 text-bold" href="#">Клуб любителей скорости</a>
+                      <div class="fs12 color-gray">10 Октября в 12:36</div>
+                      <div class="fs12 color-black">Заед по грязи на кросовых мотоциклах</div>
+                    </div>
+                    <div class="small-5 columns">
+                      <button class="tiny button float-right like">
+                      <div class="icon-32 ic-like"></div>
+                      Нравится эта группа</button>
+                    </div>
+                  </div>
+                  <div class="post-like-buttons">
+                    <ul class="menu">
+                      <li><a href="#">
+                        <div class="icon-32 ic-like float-left"></div>
+                        Нравится</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-comment float-left"></div>
+                        Комментарии</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-share float-left"></div>
+                        Поделиться</a></li>
+                      <li><a href="#">3 поделился</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-likes-block clearfix">
+                    <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+                    <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
+                    <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
+                  </div>
+                  <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
+                    <form class="form-post-comments">
+                      <input placeholder="Написать комментарий…" type="text">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feed-row">
+            <div class="post-author">
+              <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+              <div class="icon-32 trans-atv"></div>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-timestamp">Сегодня в 22:37</div>
+              <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> поделился</span></div>
+              <div class="post-content post-type-blog-news">
+                <div class="post-header">
+                  <div class="post-text">Вот что случается с теми кто игнорирует безопасность во <br>
+                    время поездок</div>
+                  <a class="post-type-blog-news-thumb" href="#" > <img src="images/blog-news.jpg" width="510" height="340" alt="video thumb" /> </a> </div>
+                <div class="post-details">
+                  <div class="post-info-blog-news-block">
+                    <h4 class="blog-title"><a href="#">Активная безопасность во время заездов на <br>
+                      мототранспорте</a></h4>
+                    <div class="blog-text">Активная безопасность — это совокупность конструктивных и эксплуатационных свойств автомобиля, направленных на предотвращение</div>
+                    <a class="blog-source" href="#">lenta.ru</a> </div>
+                  <div class="post-like-buttons">
+                    <ul class="menu">
+                      <li><a href="#">
+                        <div class="icon-32 ic-like float-left"></div>
+                        Нравится</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-comment float-left"></div>
+                        Комментарии</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-share float-left"></div>
+                        Поделиться</a></li>
+                      <li><a href="#">3 поделился</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-likes-block clearfix">
+                    <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+                    <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
+                    <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
+                  </div>
+                  <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
+                    <form class="form-post-comments">
+                      <input placeholder="Написать комментарий…" type="text">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feed-row">
+            <div class="post-author">
+              <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+              <div class="icon-32 trans-atv"></div>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-timestamp">Сегодня в 22:37</div>
+              <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> поделился</span></div>
+              <div class="post-content post-type-photos">
+                <div class="post-header">
+                  <div class="post-title">
+                    <h5><a href="#">Кавказские горы</a></h5>
+                    <div class="post-type">АЛЬБОМ</div>
+                  </div>
+                  <div class="post-text">Красота неописуемая. Все кто сомнивалося что будет не интересно, <br>
+                    смотрите фотграфии ))))</div>
+                  <a class="post-type-photos-thumb" href="#" > <img style="padding-bottom: 3px;" src="images/pic-1.jpg"  alt="video thumb" /> </a> <a class="post-type-photos-thumb float-left" href="#" > <img src="images/pic-2.jpg"  alt="video thumb" /> </a> <a class="post-type-photos-thumb float-left" href="#" > <img style="padding:0 3px;" src="images/pic-3.jpg"  alt="video thumb" /> </a> <a class="post-type-photos-thumb float-left" href="#" >
+                  <div class="photos-count">
+                    <div> +120 </div>
+                  </div>
+                  <img src="images/pic-4.jpg"  alt="video thumb" /> </a> </div>
+                <div class="post-details">
+                  <div class="post-like-buttons">
+                    <ul class="menu">
+                      <li><a href="#">
+                        <div class="icon-32 ic-like float-left"></div>
+                        Нравится</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-comment float-left"></div>
+                        Комментарии</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-share float-left"></div>
+                        Поделиться</a></li>
+                      <li><a href="#">3 поделился</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-likes-block clearfix">
+                    <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+                    <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
+                    <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
+                  </div>
+                  <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
+                    <form class="form-post-comments">
+                      <input placeholder="Написать комментарий…" type="text">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feed-row">
+            <div class="post-author">
+              <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+              <div class="icon-32 trans-buggy"></div>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-timestamp">Сегодня в 22:37</div>
+              <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> пригласил Вас на</span></div>
+              <div class="post-content post-type-tour">
+                <div class="post-header">
+                  <div class="post-title">
+                    <h5><a href="#">Путешествие по подмосковью и МО</a></h5>
+                    <div class="post-type">Покатушку</div>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <div class="race-details "> <a class="post-type-photos-thumb" href="#"> <img src="images/map-500.jpg" alt="thumb"> </a>
+                    <div class="float-left route-details">
+                      <div class=" small-4 columns np">
+                        <div class="icon-32 ic-clock float-left"></div>
+                        <div class="float-left fs10">
+                          <div class="color-gray tup">Время в пути</div>
+                          <div class="color-black "><span class="fs14">01:28 ч</span> </div>
+                        </div>
+                      </div>
+                      <div class=" small-4 columns np">
+                        <div class="icon-32 ic-distance float-left"></div>
+                        <div class="float-left fs10">
+                          <div class="color-gray tup">Время в пути</div>
+                          <div class="color-black "><span class="fs14">01:28 ч</span> </div>
+                        </div>
+                      </div>
+                      <div class=" small-4 columns np">
+                        <div class="icon-32 ic-speed float-left"></div>
+                        <div class="float-left fs10">
+                          <div class="color-gray tup">Средняя скорость</div>
+                          <div class="color-black "><span class="fs14">95 км/ч</span> </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-like-buttons">
+                    <ul class="menu">
+                      <li><a href="#">
+                        <div class="icon-32 ic-like float-left"></div>
+                        Нравится</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-comment float-left"></div>
+                        Комментарии</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-share float-left"></div>
+                        Поделиться</a></li>
+                      <li><a href="#">1 поделился</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-likes-block clearfix">
+                    <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+                    <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
+                    <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
+                  </div>
+                  <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
+                    <form class="form-post-comments">
+                      <input placeholder="Написать комментарий…" type="text">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feed-row">
+            <div class="post-author">
+              <div> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-timestamp">Сегодня в 22:37</div>
+              <div class="post-author-link"><a href="#">Admin</a><span class="color-gray"> уведомил</span></div>
+              <div class="post-content post-type-status">
+                <div class="post-header">
+                  <div class="post-title">
+                    <div class="status-badge float-left" style=" margin-right:20px;">
+                      <svg width="37px" height="41px" viewBox="0 0 37 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+                        <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+                        <desc>Created with Sketch.</desc>
+                        <defs></defs>
+                        <g id="Layer_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                          <path d="M22.6641406,35.5723438 C21.3882031,35.5723438 20.1352344,35.1021875 19.0403125,34.2127344 C18.9829688,34.1660156 18.7996875,34.0780469 18.515625,34.0780469 C18.2316406,34.0780469 18.0484375,34.1660938 17.9909375,34.2126563 C16.8960156,35.1021094 15.6428906,35.5724219 14.3667188,35.5724219 C11.9567188,35.5724219 9.96195313,33.9282031 9.28476563,31.3836719 C9.21835938,31.1346094 8.765625,30.766875 8.446875,30.766875 L8.43601563,30.7671094 C8.313125,30.77375 8.1890625,30.7771094 8.06757813,30.7771094 C6.16039063,30.7772656 4.50132813,29.9539062 3.51640625,28.518125 C2.51953125,27.0652344 2.35132813,25.1857031 3.05507813,23.3610156 C3.15742188,23.0959375 2.9696875,22.5176562 2.73101563,22.3632812 C1.04070313,21.2695312 0.07125,19.60125 0.07125,17.7861719 C0.07125,15.9710937 1.04070313,14.3028906 2.73101563,13.2089844 C2.9696875,13.0546875 3.15742188,12.4764062 3.05507813,12.21125 C2.35140625,10.386875 2.51960938,8.50726562 3.51640625,7.054375 C4.50140625,5.61859375 6.16015625,4.79515625 8.06726563,4.79515625 C8.18898438,4.79515625 8.31289063,4.7984375 8.43609375,4.80523437 L8.44710938,4.80546875 C8.71914063,4.80546875 9.20703125,4.480625 9.28484375,4.18875 C9.96210938,1.64421875 11.956875,0 14.3667969,0 C15.6428906,0 16.8960938,0.470234375 17.9910156,1.35984375 C18.0482813,1.40625 18.2314844,1.494375 18.5157031,1.494375 C18.7996094,1.494375 18.9828906,1.40632813 19.0403906,1.35976563 C20.1352344,0.470234375 21.3883594,0 22.6645313,0 C25.0745313,0 27.0690625,1.64421875 27.7466406,4.18875 C27.8128906,4.4378125 28.2654688,4.80546875 28.5842188,4.80546875 L28.5950781,4.80523437 C28.7183594,4.7984375 28.8422656,4.79515625 28.9639844,4.79515625 C30.8710938,4.79515625 32.5298438,5.61859375 33.5148438,7.054375 C34.5117188,8.50726563 34.6798438,10.3867969 33.9760156,12.2113281 C33.8736719,12.4764844 34.0615625,13.0547656 34.3002344,13.2091406 C35.9903906,14.3028906 36.96,15.97125 36.96,17.78625 C36.96,19.6013281 35.9904688,21.2695312 34.3002344,22.3633594 C34.0616406,22.5177344 33.8738281,23.0960156 33.9760156,23.3611719 C34.6796875,25.1855469 34.5114063,27.0650781 33.5148438,28.5178906 C32.5298438,29.95375 30.8710938,30.7771875 28.9639844,30.7771875 C28.8424219,30.7771875 28.7183594,30.7738281 28.5951563,30.7671875 L28.5842969,30.7669531 C28.3121094,30.7669531 27.8242188,31.0917969 27.7464063,31.38375 C27.0691406,33.9278906 25.0745313,35.5721875 22.6646875,35.5725 C22.6646875,35.5723438 22.664375,35.5723438 22.6641406,35.5723438 L22.6641406,35.5723438 Z" id="Shape" fill="#FA5400"></path>
+                          <path d="M15.9185156,3.91070313 C17.3470313,5.07109375 19.6842969,5.07109375 21.1127344,3.91070313 C22.5410937,2.75023438 24.0971875,3.2559375 24.5705469,5.03421875 C25.0439844,6.8125 26.9349219,8.18640625 28.7725781,8.08710938 C30.61,7.98773438 31.571875,9.31148438 30.9096094,11.0285156 C30.2474219,12.7455469 30.9698437,14.9683594 32.5146875,15.9682031 C34.0596094,16.9680469 34.0596094,18.6041406 32.5146875,19.6039063 C30.9697656,20.60375 30.2474219,22.8267188 30.9096094,24.5436719 C31.571875,26.2607031 30.61,27.5842969 28.7725781,27.485 C26.935,27.3858594 25.0439844,28.7596875 24.5705469,30.5378906 C24.0971875,32.3163281 22.5410937,32.821875 21.1127344,31.6614844 C19.684375,30.5010156 17.3471094,30.5010156 15.9185156,31.6614844 C14.4903125,32.821875 12.9342187,32.31625 12.4608594,30.5378906 C11.9875,28.7596094 10.0964844,27.3857813 8.25882812,27.485 C6.42109375,27.5842188 5.459375,26.260625 6.12164062,24.5436719 C6.78382812,22.8266406 6.06164062,20.60375 4.51671875,19.6039063 C2.97179687,18.6041406 2.97179687,16.9680469 4.51671875,15.9682031 C6.06164062,14.9683594 6.78382812,12.7454688 6.12164062,11.0285156 C5.459375,9.31148438 6.42101562,7.98773438 8.25882812,8.08710938 C10.0964062,8.18625 11.9874219,6.81242188 12.4608594,5.03421875 C12.9342187,3.25585938 14.4903125,2.75023438 15.9185156,3.91070313 L15.9185156,3.91070313 Z" id="Shape" fill="#FFFFFF"></path>
+                          <g id="Group" transform="translate(7.031250, 6.796875)" fill="#4080FF">
+                            <path d="M9.52164062,0.503125 C10.60125,1.38 12.3675,1.38 13.4470312,0.503125 C14.5267187,-0.373984375 15.7025781,0.008203125 16.0603125,1.35210937 C16.4182031,2.69609375 17.8471875,3.73429687 19.2357812,3.65929687 C20.6246094,3.58429687 21.3513281,4.5846875 20.8510156,5.88226562 C20.3503906,7.17992187 20.8964062,8.85984375 22.0638281,9.61539062 C23.2315625,10.3710156 23.2315625,11.6073437 22.0638281,12.3629687 C20.8964062,13.1185937 20.3503125,14.7985156 20.8510156,16.0961719 C21.35125,17.3938281 20.6245312,18.3940625 19.2357812,18.3191406 C17.8471875,18.2441406 16.4182031,19.2823437 16.0603125,20.6263281 C15.7025,21.9703125 14.5266406,22.3524219 13.4470312,21.4753906 C12.3675781,20.5984375 10.6013281,20.5984375 9.52164062,21.4753906 C8.44210937,22.3524219 7.26609375,21.9703125 6.90835937,20.6263281 C6.550625,19.2823437 5.12148437,18.2441406 3.73289062,18.3191406 C2.3440625,18.3941406 1.61734375,17.39375 2.1178125,16.0961719 C2.6184375,14.7985156 2.07242187,13.1185937 0.90484375,12.3629687 C-0.262890625,11.6072656 -0.262890625,10.3710156 0.90484375,9.61539062 C2.07242187,8.8596875 2.61851562,7.17984375 2.1178125,5.88226562 C1.61742187,4.58460937 2.34414062,3.58429687 3.73289062,3.65929687 C5.12148437,3.73429687 6.550625,2.69609375 6.90835937,1.35210937 C7.26617187,0.008203125 8.4421875,-0.373984375 9.52164062,0.503125 L9.52164062,0.503125 Z" id="Shape"></path>
+                            <polygon id="Shape" points="16.6755469 14.3185156 6.29375 14.3185156 6.29375 33.203125 11.4846094 31.1072656 16.6755469 33.203125"></polygon>
+                          </g>
+                          <ellipse id="Oval" fill="#000000" opacity="0.1" cx="18.5154687" cy="19.3659375" rx="9.0284375" ry="9.0284375"></ellipse>
+                          <polygon id="Shape" fill="#0071CE" points="23.7067969 21.1153906 13.325 21.1153906 13.325 40 18.5158594 37.9041406 23.7067969 40"></polygon>
+                          <polygon id="Shape" fill="#FFFFFF" points="16.7603906 21.1153906 16.7603906 38.6129688 18.5158594 37.9041406 20.2714063 38.6129688 20.2714063 21.1153906"></polygon>
+                          <ellipse id="Oval" fill="#F9BE00" cx="18.5154688" cy="17.7859375" rx="8.52007812" ry="8.52007813"></ellipse>
+                          <ellipse id="Oval" fill="#000000" opacity="0.15" cx="18.5154688" cy="17.7859375" rx="5.8278125" ry="5.8278125"></ellipse>
+                          <path d="M18.5158594,11.9582813 C15.2972656,11.9582813 12.6880469,14.5675 12.6880469,17.78625 C12.6880469,21.0049219 15.2973437,23.6140625 18.5158594,23.6140625 C21.734375,23.6140625 24.3436719,21.0048438 24.3436719,17.78625 C24.3436719,14.5676563 21.7344531,11.9582813 18.5158594,11.9582813 L18.5158594,11.9582813 Z M18.5158594,22.4435938 C15.9436719,22.4435938 13.8584375,20.3583594 13.8584375,17.7861719 C13.8584375,15.2139844 15.9436719,13.1286719 18.5158594,13.1286719 C21.0880469,13.1286719 23.1732813,15.2139844 23.1732813,17.7861719 C23.1732813,20.3583594 21.0880469,22.4435938 18.5158594,22.4435938 L18.5158594,22.4435938 Z" id="Shape" fill="#000000" opacity="0.1"></path>
+                          <ellipse id="Oval" fill="#FFFFFF" cx="22.71875" cy="13.7495313" rx="1.32742188" ry="1.32742188"></ellipse>
+                        </g>
+                      </svg>
+                    </div>
+                    <div class="post-type">Вы получили статус:</div>
+                    <h5><a href="#">Организтор</a></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="feed-row">
+            <div class="post-author">
+              <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+              <div class="icon-32 trans-buggy"></div>
+            </div>
+            <div class="post-wrapper">
+              <div class="post-timestamp">Сегодня в 22:37</div>
+              <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> пригласил Вас на</span></div>
+              <div class="post-content post-type-tour-info">
+                <div class="post-header">
+                  <div class="post-title">
+                    <h5><a href="#">Путешествие по подмосковью и МО</a></h5>
+                    <div class="post-type">ЗАЕЗД 10.10.2016</div>
+                  </div>
+                </div>
+                <div class="post-details">
+                  <div class="race-details ">
+                    <div class="left-col float-left ">
+                      <div class="float-left ">
+                        <div class=" small-6 columns np">
+                          <div class="icon-32 ic-clock float-left"></div>
+                          <div class="float-left fs10">
+                            <div class="color-gray tup">Время в пути</div>
+                            01:28 ч </div>
+                        </div>
+                        <div class=" small-6 columns np">
+                          <div class="icon-32 ic-distance float-left "></div>
+                          <div class="float-left fs10 ">
+                            <div class="color-gray tup">Дистанция</div>
+                            <div class="color-black fs14 ">256 км</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="float-left">
+                        <div class=" small-6 columns np">
+                          <div class="icon-32 ic-speed float-left"></div>
+                          <div class="float-left fs10">
+                            <div class="color-gray tup">Средняя скорость</div>
+                            <div class="color-black"><span class="fs14">95 км/ч</span> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="float-left tout-info-thumbs">
+                        <div class="float-left"><img src="images/tout-info-80.jpg" alt="thumb" /></div>
+                        <div class="float-left"><img src="images/tout-info-80.jpg" alt="thumb" /></div>
+                        <div class="float-left"><img src="images/tout-info-80.jpg" alt="thumb" /></div>
+                        <div class="float-left"><img src="images/tout-info-80.jpg" alt="thumb" /></div>
+                      </div>
+                    </div>
+                    <div class="right-col float-right"> <img src="images/map-160.jpg" alt="map" width="160" height="146">
+                      <div>
+                        <button class="tiny button expanded">Пригласить друзей</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="post-like-buttons">
+                    <ul class="menu">
+                      <li><a href="#">
+                        <div class="icon-32 ic-like float-left"></div>
+                        Нравится</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-comment float-left"></div>
+                        Комментарии</a></li>
+                      <li><a href="#">
+                        <div class="icon-32 ic-share float-left"></div>
+                        Поделиться</a></li>
+                      <li><a href="#">1 поделился</a></li>
+                    </ul>
+                  </div>
+                  <div class="post-likes-block clearfix">
+                    <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+                    <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
+                    <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
+                  </div>
+                  <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
+                    <form class="form-post-comments">
+                      <input placeholder="Написать комментарий…" type="text">
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div id="timeline" class="float-left">
-        <div class="feed-row">
-          <div class="post-author">
-            <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-            <div class="icon-32 trans-buggy"></div>
-          </div>
-          <div class="post-wrapper">
-            <div class="post-timestamp">Сегодня в 22:37</div>
-            <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> пригласил Вас на</span></div>
-            <div class="post-content post-type-tour">
-              <div class="post-header">
+      <div id="right-col" class="float-right" data-sticky-container>
+        <div class="sticky is-stuck is-at-top" data-sticky data-margin-top="4.438" data-top-anchor="page-body" data-sticky-on="small">
+          <div class="accordion event" data-accordion  data-allow-all-closed="true">
+            <div class="accordion-item is-active" data-accordion-item> <a href="#" class="accordion-title">Ваши мероприятия</a>
+              <div class="accordion-content" >
                 <div class="date-block">
                   <div class="date-left">10</div>
                   <div class="date-right">ОКТ<br>
                     2016</div>
                 </div>
-                <div class="post-title">
-                  <h5><a href="#">Путешествие по подмосковью и МО</a></h5>
-                  <div class="post-type">Покатушку</div>
-                </div>
+                <div class="event-title">Путишествие по подмосковью и Московской области</div>
                 <div class="event-shedule clearfix">
                   <div class="event-shedule-dates float-left">
                     <div class="event-shedule-start-date">10 октября 2016</div>
                     <div class="event-shedule-end-date">17 октября 2016</div>
                   </div>
-                  <div class="event-shedule-times float-left">
+                  <div class="event-shedule-times float-right">
                     <div class="event-shedule-start-time"><span>НАЧАЛО ЗАЕДА</span><br>
                       18:30 МСК</div>
                   </div>
-                  <div class="event-shedule-times float-left">
-                    <div class="event-shedule-start-time"><span>УЧАСТНИКИ</span><br>
-                      788</div>
-                  </div>
-                  <div class="button-group dotts small float-right"> <a class="button">Я еду</a> <a class="dropdown button float-right " data-toggle="dotts-dropdown">
-                    <div class="ic-dotts icon-32"></div>
-                    </a>
-                    <div class="dropdown-pane bottom" id="dotts-dropdown" data-dropdown data-options="hOffset: 0; closeOnClick: true;" style="width:200px;">
-                      <ul class="menu vertical fs12">
-                        <li class="menu-text">Ваше действие</li>
-                        <li><a href="#">Я еду</a></li>
-                        <li><a href="#">Возможно</a></li>
-                        <li><a href="#">Не поеду</a></li>
-                      </ul>
-                    </div>
-                  </div>
                 </div>
               </div>
-              <div class="post-details">
-                <div class="race-details ">
-                  <div class="left-col float-left ">
-                    <div class="float-left ">
-                      <div class=" small-6 columns np">
-                        <div class="icon-32 ic-clock float-left"></div>
-                        <div class="float-left fs10">
-                          <div class="color-gray tup">Длительность</div>
-                          <div class="color-black"><span class="fs14">7</span> дней, <span class="fs14">6</span> ночей</div>
-                        </div>
-                      </div>
-                      <div class=" small-6 columns np">
-                        <div class="icon-32 ic-level float-left "></div>
-                        <div class="float-left fs10 ">
-                          <div class="color-gray tup">Уровень сложности</div>
-                          <div class="color-black fs12 lvl-difficult">Сложный</div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="float-left">
-                      <div class=" small-6 columns np">
-                        <div class="icon-32 ic-distance float-left"></div>
-                        <div class="float-left fs10">
-                          <div class="color-gray tup">Дистанция</div>
-                          <div class="color-black"><span class="fs14">256 км</span> </div>
-                        </div>
-                      </div>
-                      <div class=" small-6 columns np">
-                        <div class="icon-32 ic-empty float-left "></div>
-                        <div class="float-left fs10 ">
-                          <div class="color-gray tup">Тип транспорта</div>
-                          <div class="icon-32 trans-buggy-hover float-left"></div>
-                          <div class="icon-32 trans-4x4-hover float-left"></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="float-left ">
-                      <div class="icon-32 ic-gps float-left"></div>
-                      <div class="float-left">
-                        <div class="color-black fs12">56.861399, 53.213832</div>
-                      </div>
-                    </div>
+              <div class="accordion-content-footer clearfix" data-tab-content>
+                <div class="fs12 color-gray">ДЕЙСТВИЯ:</div>
+                <div class="fs12 color-gray"> <span class="fs18 color-black text-medium">125 </span> <span>человек едут</span>
+                  <div class="user-group float-right"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
+                    <div class="user-group-count user-group-img fs10">125</div>
                   </div>
-                  <div class="right-col float-right"> <img src="images/map-160.jpg" alt="map" width="160" height="146"> </div>
                 </div>
-                <div class="post-like-buttons">
-                  <ul class="menu">
-                    <li><a href="#">
-                      <div class="icon-32 ic-like float-left"></div>
-                      Нравится</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-comment float-left"></div>
-                      Комментарии</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-share float-left"></div>
-                      Поделиться</a></li>
-                    <li><a href="#">1 поделился</a></li>
-                  </ul>
-                </div>
-                <div class="post-likes-block clearfix">
-                  <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-                  <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
-                  <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
-                </div>
-                <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
-                  <form class="form-post-comments">
-                    <input placeholder="Написать комментарий…" type="text">
-                  </form>
-                </div>
+                <div class="fs10 color-success">+ 12 новых</div>
+                <button class="tiny button float-left">Пригласить друзей</button>
+                <button class="tiny button float-right share icon"></button>
               </div>
             </div>
           </div>
-        </div>
-        <div class="feed-row">
-          <div class="post-author">
-            <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-            <div class="icon-32 trans-motocross"></div>
-          </div>
-          <div class="post-wrapper">
-            <div class="post-timestamp">Сегодня в 22:37</div>
-            <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> поделился</span></div>
-            <div class="post-content post-type-adv">
-              <div class="post-header"> <img src="images/add-img.jpg" alt="adds" width="550" height="230">
-                <div class="badge-adv badge">Реклама</div>
-                <div class="text-adv">
-                  <h2 style="font-weight: bold; font-style: italic; color:#fff;">CAN-AM TROPHY - ТРОФИ РЕЙД 2016</h2>
-                  <p style="color: #fff;">Can-Am Trophy Russia теперь можно классифицировать<br>
-                    как марафон. Протяженность спецучастков будет<br>
-                    увеличена, вырастет и количество спортивных дней.</p>
-                </div>
-              </div>
-              <div class="post-details">
-                <div class="post-like-buttons">
-                  <ul class="menu">
-                    <li><a href="#">
-                      <div class="icon-32 ic-like float-left"></div>
-                      Нравится</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-comment float-left"></div>
-                      Комментарии</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-share float-left"></div>
-                      Поделиться</a></li>
-                  </ul>
-                </div>
-                <div class="post-likes-block clearfix">
-                  <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-                  <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
-                  <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
-                </div>
-                <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
-                  <form class="form-post-comments">
-                    <input placeholder="Написать комментарий…" type="text">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="feed-row">
-          <div class="post-author">
-            <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-            <div class="icon-32 trans-atv"></div>
-          </div>
-          <div class="post-wrapper">
-            <div class="post-timestamp">Сегодня в 22:37</div>
-            <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> поделился</span></div>
-            <div class="post-content post-type-video">
-              <div class="post-header">
-                <div class="post-title">
-                  <h5><a href="#">Кавказские горы</a></h5>
-                  <div class="post-type">ВИДЕО</div>
-                </div>
-                <div class="post-text">Мужики я думаю вы это зацените</div>
-                <a class="post-type-video-thumb" href="#" > <img src="images/video-thumb.jpg"  alt="video thumb" /> </a>
-                <div class="post-type-video-views-count">10,333,885 Просмотров</div>
-              </div>
-              <div class="post-details">
-                <div class="post-info-group-block">
-                  <div class="small-7 columns"> <a class="color-primary fs12 text-bold" href="#">Клуб любителей скорости</a>
-                    <div class="fs12 color-gray">10 Октября в 12:36</div>
-                    <div class="fs12 color-black">Заед по грязи на кросовых мотоциклах</div>
-                  </div>
-                  <div class="small-5 columns">
-                    <button class="tiny button float-right like">
-                    <div class="icon-32 ic-like"></div>
-                    Нравится эта группа</button>
-                  </div>
-                </div>
-                <div class="post-like-buttons">
-                  <ul class="menu">
-                    <li><a href="#">
-                      <div class="icon-32 ic-like float-left"></div>
-                      Нравится</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-comment float-left"></div>
-                      Комментарии</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-share float-left"></div>
-                      Поделиться</a></li>
-                    <li><a href="#">3 поделился</a></li>
-                  </ul>
-                </div>
-                <div class="post-likes-block clearfix">
-                  <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-                  <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
-                  <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
-                </div>
-                <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
-                  <form class="form-post-comments">
-                    <input placeholder="Написать комментарий…" type="text">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="feed-row">
-          <div class="post-author">
-            <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-            <div class="icon-32 trans-atv"></div>
-          </div>
-          <div class="post-wrapper">
-            <div class="post-timestamp">Сегодня в 22:37</div>
-            <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> поделился</span></div>
-            <div class="post-content post-type-blog-news">
-              <div class="post-header">
-                <div class="post-text">Вот что случается с теми кто игнорирует безопасность во <br>
-                  время поездок</div>
-                <a class="post-type-blog-news-thumb" href="#" > <img src="images/blog-news.jpg" width="510" height="340" alt="video thumb" /> </a> </div>
-              <div class="post-details">
-                <div class="post-info-blog-news-block">
-                  <h4 class="blog-title"><a href="#">Активная безопасность во время заездов на <br>
-                    мототранспорте</a></h4>
-                  <div class="blog-text">Активная безопасность — это совокупность конструктивных и эксплуатационных свойств автомобиля, направленных на предотвращение</div>
-                  <a class="blog-source" href="#">lenta.ru</a> </div>
-                <div class="post-like-buttons">
-                  <ul class="menu">
-                    <li><a href="#">
-                      <div class="icon-32 ic-like float-left"></div>
-                      Нравится</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-comment float-left"></div>
-                      Комментарии</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-share float-left"></div>
-                      Поделиться</a></li>
-                    <li><a href="#">3 поделился</a></li>
-                  </ul>
-                </div>
-                <div class="post-likes-block clearfix">
-                  <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-                  <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
-                  <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
-                </div>
-                <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
-                  <form class="form-post-comments">
-                    <input placeholder="Написать комментарий…" type="text">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="feed-row">
-          <div class="post-author">
-            <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-            <div class="icon-32 trans-atv"></div>
-          </div>
-          <div class="post-wrapper">
-            <div class="post-timestamp">Сегодня в 22:37</div>
-            <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> поделился</span></div>
-            <div class="post-content post-type-photos">
-              <div class="post-header">
-                <div class="post-title">
-                  <h5><a href="#">Кавказские горы</a></h5>
-                  <div class="post-type">АЛЬБОМ</div>
-                </div>
-                <div class="post-text">Красота неописуемая. Все кто сомнивалося что будет не интересно, <br>
-                  смотрите фотграфии ))))</div>
-                <a class="post-type-photos-thumb" href="#" > <img style="padding-bottom: 3px;" src="images/pic-1.jpg"  alt="video thumb" /> </a> <a class="post-type-photos-thumb float-left" href="#" > <img src="images/pic-2.jpg"  alt="video thumb" /> </a> <a class="post-type-photos-thumb float-left" href="#" > <img style="padding:0 3px;" src="images/pic-3.jpg"  alt="video thumb" /> </a> <a class="post-type-photos-thumb float-left" href="#" >
-                <div class="photos-count">
-                  <div> +120 </div>
-                </div>
-                <img src="images/pic-4.jpg"  alt="video thumb" /> </a> </div>
-              <div class="post-details">
-                <div class="post-like-buttons">
-                  <ul class="menu">
-                    <li><a href="#">
-                      <div class="icon-32 ic-like float-left"></div>
-                      Нравится</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-comment float-left"></div>
-                      Комментарии</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-share float-left"></div>
-                      Поделиться</a></li>
-                    <li><a href="#">3 поделился</a></li>
-                  </ul>
-                </div>
-                <div class="post-likes-block clearfix">
-                  <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-                  <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
-                  <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
-                </div>
-                <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
-                  <form class="form-post-comments">
-                    <input placeholder="Написать комментарий…" type="text">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="feed-row">
-          <div class="post-author">
-            <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-            <div class="icon-32 trans-buggy"></div>
-          </div>
-          <div class="post-wrapper">
-            <div class="post-timestamp">Сегодня в 22:37</div>
-            <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> пригласил Вас на</span></div>
-            <div class="post-content post-type-tour">
-              <div class="post-header">
-                <div class="post-title">
-                  <h5><a href="#">Путешествие по подмосковью и МО</a></h5>
-                  <div class="post-type">Покатушку</div>
-                </div>
-              </div>
-              <div class="post-details">
-                <div class="race-details "> <a class="post-type-photos-thumb" href="#"> <img src="images/map-500.jpg" alt="thumb"> </a>
-                  <div class="float-left route-details">
-                    <div class=" small-4 columns np">
-                      <div class="icon-32 ic-clock float-left"></div>
-                      <div class="float-left fs10">
-                        <div class="color-gray tup">Время в пути</div>
-                        <div class="color-black "><span class="fs14">01:28 ч</span> </div>
-                      </div>
-                    </div>
-                    <div class=" small-4 columns np">
-                      <div class="icon-32 ic-distance float-left"></div>
-                      <div class="float-left fs10">
-                        <div class="color-gray tup">Время в пути</div>
-                        <div class="color-black "><span class="fs14">01:28 ч</span> </div>
-                      </div>
-                    </div>
-                    <div class=" small-4 columns np">
-                      <div class="icon-32 ic-speed float-left"></div>
-                      <div class="float-left fs10">
-                        <div class="color-gray tup">Средняя скорость</div>
-                        <div class="color-black "><span class="fs14">95 км/ч</span> </div>
-                      </div>
+          <div class="accordion upcoming-event" data-accordion  data-allow-all-closed="true">
+            <div class="accordion-item is-active" data-accordion-item> <a href="#" class="accordion-title">ПРЕДСТОЯЩИЕ СОБЫТИЯ</a>
+              <div class="accordion-content" data-tab-content>
+                <div class="upcoming-event-item">
+                  <div class="event-shedule clearfix">
+                    <div class="event-shedule-img float-left"> <img src="images/map-40.jpg" width="40" height="40" alt="map" /> </div>
+                    <div class="event-title">Евротур на квадроциклах</div>
+                    <div class="event-shedule-dates float-left">
+                      <div class="event-shedule-start-date">10 октября 2016</div>
+                      <div class="event-shedule-end-date">17 октября 2016</div>
                     </div>
                   </div>
                 </div>
-                <div class="post-like-buttons">
-                  <ul class="menu">
-                    <li><a href="#">
-                      <div class="icon-32 ic-like float-left"></div>
-                      Нравится</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-comment float-left"></div>
-                      Комментарии</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-share float-left"></div>
-                      Поделиться</a></li>
-                    <li><a href="#">1 поделился</a></li>
-                  </ul>
-                </div>
-                <div class="post-likes-block clearfix">
-                  <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-                  <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
-                  <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
-                </div>
-                <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
-                  <form class="form-post-comments">
-                    <input placeholder="Написать комментарий…" type="text">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="feed-row">
-          <div class="post-author">
-            <div> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-          </div>
-          <div class="post-wrapper">
-            <div class="post-timestamp">Сегодня в 22:37</div>
-            <div class="post-author-link"><a href="#">Admin</a><span class="color-gray"> уведомил</span></div>
-            <div class="post-content post-type-status">
-              <div class="post-header">
-                <div class="post-title">
-                  <div class="status-badge float-left" style=" margin-right:20px;">
-                    <svg width="37px" height="41px" viewBox="0 0 37 41" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
-                      <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
-                      <desc>Created with Sketch.</desc>
-                      <defs></defs>
-                      <g id="Layer_1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <path d="M22.6641406,35.5723438 C21.3882031,35.5723438 20.1352344,35.1021875 19.0403125,34.2127344 C18.9829688,34.1660156 18.7996875,34.0780469 18.515625,34.0780469 C18.2316406,34.0780469 18.0484375,34.1660938 17.9909375,34.2126563 C16.8960156,35.1021094 15.6428906,35.5724219 14.3667188,35.5724219 C11.9567188,35.5724219 9.96195313,33.9282031 9.28476563,31.3836719 C9.21835938,31.1346094 8.765625,30.766875 8.446875,30.766875 L8.43601563,30.7671094 C8.313125,30.77375 8.1890625,30.7771094 8.06757813,30.7771094 C6.16039063,30.7772656 4.50132813,29.9539062 3.51640625,28.518125 C2.51953125,27.0652344 2.35132813,25.1857031 3.05507813,23.3610156 C3.15742188,23.0959375 2.9696875,22.5176562 2.73101563,22.3632812 C1.04070313,21.2695312 0.07125,19.60125 0.07125,17.7861719 C0.07125,15.9710937 1.04070313,14.3028906 2.73101563,13.2089844 C2.9696875,13.0546875 3.15742188,12.4764062 3.05507813,12.21125 C2.35140625,10.386875 2.51960938,8.50726562 3.51640625,7.054375 C4.50140625,5.61859375 6.16015625,4.79515625 8.06726563,4.79515625 C8.18898438,4.79515625 8.31289063,4.7984375 8.43609375,4.80523437 L8.44710938,4.80546875 C8.71914063,4.80546875 9.20703125,4.480625 9.28484375,4.18875 C9.96210938,1.64421875 11.956875,0 14.3667969,0 C15.6428906,0 16.8960938,0.470234375 17.9910156,1.35984375 C18.0482813,1.40625 18.2314844,1.494375 18.5157031,1.494375 C18.7996094,1.494375 18.9828906,1.40632813 19.0403906,1.35976563 C20.1352344,0.470234375 21.3883594,0 22.6645313,0 C25.0745313,0 27.0690625,1.64421875 27.7466406,4.18875 C27.8128906,4.4378125 28.2654688,4.80546875 28.5842188,4.80546875 L28.5950781,4.80523437 C28.7183594,4.7984375 28.8422656,4.79515625 28.9639844,4.79515625 C30.8710938,4.79515625 32.5298438,5.61859375 33.5148438,7.054375 C34.5117188,8.50726563 34.6798438,10.3867969 33.9760156,12.2113281 C33.8736719,12.4764844 34.0615625,13.0547656 34.3002344,13.2091406 C35.9903906,14.3028906 36.96,15.97125 36.96,17.78625 C36.96,19.6013281 35.9904688,21.2695312 34.3002344,22.3633594 C34.0616406,22.5177344 33.8738281,23.0960156 33.9760156,23.3611719 C34.6796875,25.1855469 34.5114063,27.0650781 33.5148438,28.5178906 C32.5298438,29.95375 30.8710938,30.7771875 28.9639844,30.7771875 C28.8424219,30.7771875 28.7183594,30.7738281 28.5951563,30.7671875 L28.5842969,30.7669531 C28.3121094,30.7669531 27.8242188,31.0917969 27.7464063,31.38375 C27.0691406,33.9278906 25.0745313,35.5721875 22.6646875,35.5725 C22.6646875,35.5723438 22.664375,35.5723438 22.6641406,35.5723438 L22.6641406,35.5723438 Z" id="Shape" fill="#FA5400"></path>
-                        <path d="M15.9185156,3.91070313 C17.3470313,5.07109375 19.6842969,5.07109375 21.1127344,3.91070313 C22.5410937,2.75023438 24.0971875,3.2559375 24.5705469,5.03421875 C25.0439844,6.8125 26.9349219,8.18640625 28.7725781,8.08710938 C30.61,7.98773438 31.571875,9.31148438 30.9096094,11.0285156 C30.2474219,12.7455469 30.9698437,14.9683594 32.5146875,15.9682031 C34.0596094,16.9680469 34.0596094,18.6041406 32.5146875,19.6039063 C30.9697656,20.60375 30.2474219,22.8267188 30.9096094,24.5436719 C31.571875,26.2607031 30.61,27.5842969 28.7725781,27.485 C26.935,27.3858594 25.0439844,28.7596875 24.5705469,30.5378906 C24.0971875,32.3163281 22.5410937,32.821875 21.1127344,31.6614844 C19.684375,30.5010156 17.3471094,30.5010156 15.9185156,31.6614844 C14.4903125,32.821875 12.9342187,32.31625 12.4608594,30.5378906 C11.9875,28.7596094 10.0964844,27.3857813 8.25882812,27.485 C6.42109375,27.5842188 5.459375,26.260625 6.12164062,24.5436719 C6.78382812,22.8266406 6.06164062,20.60375 4.51671875,19.6039063 C2.97179687,18.6041406 2.97179687,16.9680469 4.51671875,15.9682031 C6.06164062,14.9683594 6.78382812,12.7454688 6.12164062,11.0285156 C5.459375,9.31148438 6.42101562,7.98773438 8.25882812,8.08710938 C10.0964062,8.18625 11.9874219,6.81242188 12.4608594,5.03421875 C12.9342187,3.25585938 14.4903125,2.75023438 15.9185156,3.91070313 L15.9185156,3.91070313 Z" id="Shape" fill="#FFFFFF"></path>
-                        <g id="Group" transform="translate(7.031250, 6.796875)" fill="#4080FF">
-                          <path d="M9.52164062,0.503125 C10.60125,1.38 12.3675,1.38 13.4470312,0.503125 C14.5267187,-0.373984375 15.7025781,0.008203125 16.0603125,1.35210937 C16.4182031,2.69609375 17.8471875,3.73429687 19.2357812,3.65929687 C20.6246094,3.58429687 21.3513281,4.5846875 20.8510156,5.88226562 C20.3503906,7.17992187 20.8964062,8.85984375 22.0638281,9.61539062 C23.2315625,10.3710156 23.2315625,11.6073437 22.0638281,12.3629687 C20.8964062,13.1185937 20.3503125,14.7985156 20.8510156,16.0961719 C21.35125,17.3938281 20.6245312,18.3940625 19.2357812,18.3191406 C17.8471875,18.2441406 16.4182031,19.2823437 16.0603125,20.6263281 C15.7025,21.9703125 14.5266406,22.3524219 13.4470312,21.4753906 C12.3675781,20.5984375 10.6013281,20.5984375 9.52164062,21.4753906 C8.44210937,22.3524219 7.26609375,21.9703125 6.90835937,20.6263281 C6.550625,19.2823437 5.12148437,18.2441406 3.73289062,18.3191406 C2.3440625,18.3941406 1.61734375,17.39375 2.1178125,16.0961719 C2.6184375,14.7985156 2.07242187,13.1185937 0.90484375,12.3629687 C-0.262890625,11.6072656 -0.262890625,10.3710156 0.90484375,9.61539062 C2.07242187,8.8596875 2.61851562,7.17984375 2.1178125,5.88226562 C1.61742187,4.58460937 2.34414062,3.58429687 3.73289062,3.65929687 C5.12148437,3.73429687 6.550625,2.69609375 6.90835937,1.35210937 C7.26617187,0.008203125 8.4421875,-0.373984375 9.52164062,0.503125 L9.52164062,0.503125 Z" id="Shape"></path>
-                          <polygon id="Shape" points="16.6755469 14.3185156 6.29375 14.3185156 6.29375 33.203125 11.4846094 31.1072656 16.6755469 33.203125"></polygon>
-                        </g>
-                        <ellipse id="Oval" fill="#000000" opacity="0.1" cx="18.5154687" cy="19.3659375" rx="9.0284375" ry="9.0284375"></ellipse>
-                        <polygon id="Shape" fill="#0071CE" points="23.7067969 21.1153906 13.325 21.1153906 13.325 40 18.5158594 37.9041406 23.7067969 40"></polygon>
-                        <polygon id="Shape" fill="#FFFFFF" points="16.7603906 21.1153906 16.7603906 38.6129688 18.5158594 37.9041406 20.2714063 38.6129688 20.2714063 21.1153906"></polygon>
-                        <ellipse id="Oval" fill="#F9BE00" cx="18.5154688" cy="17.7859375" rx="8.52007812" ry="8.52007813"></ellipse>
-                        <ellipse id="Oval" fill="#000000" opacity="0.15" cx="18.5154688" cy="17.7859375" rx="5.8278125" ry="5.8278125"></ellipse>
-                        <path d="M18.5158594,11.9582813 C15.2972656,11.9582813 12.6880469,14.5675 12.6880469,17.78625 C12.6880469,21.0049219 15.2973437,23.6140625 18.5158594,23.6140625 C21.734375,23.6140625 24.3436719,21.0048438 24.3436719,17.78625 C24.3436719,14.5676563 21.7344531,11.9582813 18.5158594,11.9582813 L18.5158594,11.9582813 Z M18.5158594,22.4435938 C15.9436719,22.4435938 13.8584375,20.3583594 13.8584375,17.7861719 C13.8584375,15.2139844 15.9436719,13.1286719 18.5158594,13.1286719 C21.0880469,13.1286719 23.1732813,15.2139844 23.1732813,17.7861719 C23.1732813,20.3583594 21.0880469,22.4435938 18.5158594,22.4435938 L18.5158594,22.4435938 Z" id="Shape" fill="#000000" opacity="0.1"></path>
-                        <ellipse id="Oval" fill="#FFFFFF" cx="22.71875" cy="13.7495313" rx="1.32742188" ry="1.32742188"></ellipse>
-                      </g>
-                    </svg>
-                  </div>
-                  <div class="post-type">Вы получили статус:</div>
-                  <h5><a href="#">Организтор</a></h5>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="feed-row">
-          <div class="post-author">
-            <div class="user-thumb online"> <img class="submit-post-box-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-            <div class="icon-32 trans-buggy"></div>
-          </div>
-          <div class="post-wrapper">
-            <div class="post-timestamp">Сегодня в 22:37</div>
-            <div class="post-author-link"><a href="#">Александр Кривицкий</a><span class="color-gray"> пригласил Вас на</span></div>
-            <div class="post-content post-type-tour-info">
-              <div class="post-header">
-                <div class="post-title">
-                  <h5><a href="#">Путешествие по подмосковью и МО</a></h5>
-                  <div class="post-type">ЗАЕЗД 10.10.2016</div>
-                </div>
-              </div>
-              <div class="post-details">
-                <div class="race-details ">
-                  <div class="left-col float-left ">
-                    <div class="float-left ">
-                      <div class=" small-6 columns np">
-                        <div class="icon-32 ic-clock float-left"></div>
-                        <div class="float-left fs10">
-                          <div class="color-gray tup">Время в пути</div>
-                          01:28 ч </div>
-                      </div>
-                      <div class=" small-6 columns np">
-                        <div class="icon-32 ic-distance float-left "></div>
-                        <div class="float-left fs10 ">
-                          <div class="color-gray tup">Дистанция</div>
-                          <div class="color-black fs14 ">256 км</div>
-                        </div>
-                      </div>
+                <div class="upcoming-event-item">
+                  <div class="event-shedule clearfix">
+                    <div class="event-shedule-img float-left"> <img src="images/map-40.jpg" width="40" height="40" alt="map" /> </div>
+                    <div class="event-title">Евротур на квадроциклах</div>
+                    <div class="event-shedule-dates float-left">
+                      <div class="event-shedule-start-date">10 октября 2016</div>
+                      <div class="event-shedule-end-date">17 октября 2016</div>
                     </div>
-                    <div class="float-left">
-                      <div class=" small-6 columns np">
-                        <div class="icon-32 ic-speed float-left"></div>
-                        <div class="float-left fs10">
-                          <div class="color-gray tup">Средняя скорость</div>
-                          <div class="color-black"><span class="fs14">95 км/ч</span> </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="float-left tout-info-thumbs">
-                      <div class="float-left"><img src="images/tout-info-80.jpg" alt="thumb" /></div>
-                      <div class="float-left"><img src="images/tout-info-80.jpg" alt="thumb" /></div>
-                      <div class="float-left"><img src="images/tout-info-80.jpg" alt="thumb" /></div>
-                      <div class="float-left"><img src="images/tout-info-80.jpg" alt="thumb" /></div>
-                    </div>
+                    <div class="fs10 color-gray float-right">Вы и Сергей Чертков + 145 едут</div>
                   </div>
-                  <div class="right-col float-right"> <img src="images/map-160.jpg" alt="map" width="160" height="146">
-                    <div>
-                      <button class="tiny button expanded">Пригласить друзей</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="post-like-buttons">
-                  <ul class="menu">
-                    <li><a href="#">
-                      <div class="icon-32 ic-like float-left"></div>
-                      Нравится</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-comment float-left"></div>
-                      Комментарии</a></li>
-                    <li><a href="#">
-                      <div class="icon-32 ic-share float-left"></div>
-                      Поделиться</a></li>
-                    <li><a href="#">1 поделился</a></li>
-                  </ul>
-                </div>
-                <div class="post-likes-block clearfix">
-                  <div class="user-group float-left"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
-                  <div class="fs12 color-gray float-left user-like-this">Вы и Сергей Чертков, Олегряшов + 145 нравится</div>
-                  <div class="fs12 color-gray float-right user-comments-this"> 0 комментариев</div>
-                </div>
-                <div class="post-comments"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
-                  <form class="form-post-comments">
-                    <input placeholder="Написать комментарий…" type="text">
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div id="right-col" class="float-right" data-sticky-container>
-      <div class="sticky" data-sticky data-margin-top="4.438" data-anchor="page-body">
-        <div class="accordion event" data-accordion  data-allow-all-closed="true">
-          <div class="accordion-item is-active" data-accordion-item> <a href="#" class="accordion-title">Ваши мероприятия</a>
-            <div class="accordion-content" >
-              <div class="date-block">
-                <div class="date-left">10</div>
-                <div class="date-right">ОКТ<br>
-                  2016</div>
-              </div>
-              <div class="event-title">Путишествие по подмосковью и Московской области</div>
-              <div class="event-shedule clearfix">
-                <div class="event-shedule-dates float-left">
-                  <div class="event-shedule-start-date">10 октября 2016</div>
-                  <div class="event-shedule-end-date">17 октября 2016</div>
-                </div>
-                <div class="event-shedule-times float-right">
-                  <div class="event-shedule-start-time"><span>НАЧАЛО ЗАЕДА</span><br>
-                    18:30 МСК</div>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-content-footer clearfix" data-tab-content>
-              <div class="fs12 color-gray">ДЕЙСТВИЯ:</div>
-              <div class="fs12 color-gray"> <span class="fs18 color-black text-medium">125 </span> <span>человек едут</span>
-                <div class="user-group float-right"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> <img class="user-group-img" src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий">
-                  <div class="user-group-count user-group-img fs10">125</div>
-                </div>
-              </div>
-              <div class="fs10 color-success">+ 12 новых</div>
-              <button class="tiny button float-left">Пригласить друзей</button>
-              <button class="tiny button float-right share icon"></button>
-            </div>
-          </div>
-        </div>
-        <div class="accordion upcoming-event" data-accordion  data-allow-all-closed="true">
-          <div class="accordion-item is-active" data-accordion-item> <a href="#" class="accordion-title">ПРЕДСТОЯЩИЕ СОБЫТИЯ</a>
-            <div class="accordion-content" data-tab-content>
-              <div class="upcoming-event-item">
-                <div class="event-shedule clearfix">
-                  <div class="event-shedule-img float-left"> <img src="images/map-40.jpg" width="40" height="40" alt="map" /> </div>
-                  <div class="event-title">Евротур на квадроциклах</div>
-                  <div class="event-shedule-dates float-left">
-                    <div class="event-shedule-start-date">10 октября 2016</div>
-                    <div class="event-shedule-end-date">17 октября 2016</div>
-                  </div>
-                </div>
-              </div>
-              <div class="upcoming-event-item">
-                <div class="event-shedule clearfix">
-                  <div class="event-shedule-img float-left"> <img src="images/map-40.jpg" width="40" height="40" alt="map" /> </div>
-                  <div class="event-title">Евротур на квадроциклах</div>
-                  <div class="event-shedule-dates float-left">
-                    <div class="event-shedule-start-date">10 октября 2016</div>
-                    <div class="event-shedule-end-date">17 октября 2016</div>
-                  </div>
-                  <div class="fs10 color-gray float-right">Вы и Сергей Чертков + 145 едут</div>
                 </div>
               </div>
             </div>
@@ -644,147 +648,99 @@
     </div>
   </div>
 </div>
-</div>
 <div id="right-sidebar">
-    <div id="events-body">
-    	<ul id="event-list">
-        	<li>
-            	<a href="#">
-                    <div class="thumb">
-                        <img src="images/map-160.jpg" alt="map" width="50" height="50">
-                    </div>
-                    <div class="event-info">
-                        <div class="event-title">Burns Off Road</div>
-                        <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-                    <div class="thumb">
-                        <img src="images/map-160.jpg" alt="map" width="50" height="50">
-                    </div>
-                    <div class="event-info">
-                        <div class="event-title">Квадроциклисты</div>
-                        <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-                    <div class="thumb">
-                        <img src="images/map-160.jpg" alt="map" width="50" height="50">
-                    </div>
-                    <div class="event-info">
-                        <div class="event-title">Поездки по подм..</div>
-                        <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-                    <div class="thumb">
-                        <img src="images/map-160.jpg" alt="map" width="50" height="50">
-                    </div>
-                    <div class="event-info">
-                        <div class="event-title">Поездки по подм..</div>
-                        <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
-                    </div>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <!--div id="chat-body">
-    	<ul id="chat-list">
-        	<li>
-            	<a href="#">
-                     <div class="user-thumb online"> 
-                     	<img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> 
-                     </div>
-                    <div class="user-info">
-                        <div class="user-name">Николай Котков</div>
-                        <div class="user-status">Путешественник</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-                     <div class="user-thumb online"> 
-                     	<img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> 
-                     </div>
-                    <div class="user-info">
-                        <div class="user-name">Николай Котков</div>
-                        <div class="user-status">Путешественник</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-                     <div class="user-thumb online"> 
-                     	<img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> 
-                     </div>
-                    <div class="user-info">
-                        <div class="user-name">Николай Котков</div>
-                        <div class="user-status">Путешественник</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-                     <div class="user-thumb offline"> 
-                     	<img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> 
-                     </div>
-                    <div class="user-info">
-                        <div class="user-name">Николай Котков</div>
-                        <div class="user-status">Путешественник</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-                     <div class="user-thumb online"> 
-                     	<img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> 
-                     </div>
-                    <div class="user-info">
-                        <div class="user-name">Николай Котков</div>
-                        <div class="user-status">Путешественник</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-                     <div class="user-thumb online"> 
-                     	<img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> 
-                     </div>
-                    <div class="user-info">
-                        <div class="user-name">Николай Котков</div>
-                        <div class="user-status">Путешественник</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-            	<a href="#">
-                     <div class="user-thumb online"> 
-                     	<img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> 
-                     </div>
-                    <div class="user-info">
-                        <div class="user-name">Николай Котков</div>
-                        <div class="user-status">Путешественник</div>
-                    </div>
-                </a>
-            </li>
-            
-        </ul>
-    	
-    </div-->
-    <form id="chat-list-search">
-          <input placeholder="Поиск друзей" type="search">
-    </form>
+  <div id="events-body">
+    <ul id="event-list">
+      <li> <a href="#">
+        <div class="thumb"> <img src="images/map-160.jpg" alt="map" width="50" height="50"> </div>
+        <div class="event-info">
+          <div class="event-title">Burns Off Road</div>
+          <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="thumb"> <img src="images/map-160.jpg" alt="map" width="50" height="50"> </div>
+        <div class="event-info">
+          <div class="event-title">Квадроциклисты</div>
+          <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="thumb"> <img src="images/map-160.jpg" alt="map" width="50" height="50"> </div>
+        <div class="event-info">
+          <div class="event-title">Поездки по подм..</div>
+          <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="thumb"> <img src="images/map-160.jpg" alt="map" width="50" height="50"> </div>
+        <div class="event-info">
+          <div class="event-title">Поездки по подм..</div>
+          <div class="event-desc">Игорь Захаров, Иван Шустов, Игорь…</div>
+        </div>
+        </a> </li>
+    </ul>
+  </div>
+  <div id="chat-body">
+    <ul id="chat-list">
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb offline"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+      <li> <a href="#">
+        <div class="user-thumb online"> <img src="https://pp.vk.me/c623726/v623726939/1b43d/KNHl8fVNUaY.jpg" alt="Виталий"> </div>
+        <div class="user-info">
+          <div class="user-name">Николай Котков</div>
+          <div class="user-status">Путешественник</div>
+        </div>
+        </a> </li>
+    </ul>
+  </div>
+  <form id="chat-list-search">
+    <input placeholder="Поиск друзей" type="search">
+  </form>
 </div>
-<script src="js/vendor/jquery.js"></script> 
-<script src="js/vendor/what-input.js"></script> 
-<script src="js/vendor/foundation.js"></script> 
-<script src="js/jquery.slimscroll.js"></script>
+<script src="js/jquery.js"></script> 
+<script src="js/what-input.js"></script> 
+<script src="js/foundation.js"></script> 
 <script src="js/app.js"></script>
 </body>
 </html>
